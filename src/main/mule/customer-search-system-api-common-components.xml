@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<configuration-properties doc:name="Configuration properties" doc:id="d5701a36-a243-4f15-9e69-338fcf798db6" file="${mule.env}.properties" />
+	<global-property doc:name="Global Property" doc:id="e29a988b-377f-46c1-874c-66876f9980dc" name="mule.env" value="dev" />
+	<http:listener-config name="Customer-Search-HTTP-Listener" doc:name="HTTP Listener config" doc:id="a6c33606-f20a-4c88-bffd-8ded0935e37b" basePath="/v1.0" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+</mule>
