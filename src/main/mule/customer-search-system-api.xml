@@ -6,7 +6,6 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<flow name="customer-search-system-apiFlow" doc:id="de3376ff-4b11-44e6-bb51-eadf5be7eb42" >
 		<http:listener doc:name="Listener" doc:id="a8b95a55-2b60-41c3-9e26-58786f2885ba" config-ref="Customer-Search-HTTP-Listener" path="/api/"/>
-		<logger level="INFO" doc:name="Logger" doc:id="c5a9ffdb-6232-46a1-bfe3-6eeddddfb00a" />
 		<logger level="INFO" doc:name="Logger" doc:id="77411482-832c-4ab4-8191-268febaedcfd" />
 	</flow>
 </mule>
